@@ -24,27 +24,23 @@ struct CharacterCard: View {
                     ProgressView()
                 }.padding(.leading, 16)
                 
-                VStack(alignment: .leading) {
-                    Text(character.name)
-                        .font(.system(size: 18))
-                    
-                    Text(character.species)
-                        .font(.system(size: 14))
-                                        
-                }
+                cardDescription
             }
             Spacer()
         }
         .frame(width: UIScreen.main.bounds.width - 32, height: 90)
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(Color.secondary, lineWidth: 1))
-//        .background(
-//            RoundedRectangle(
-//                cornerRadius: 12,
-//                style: .continuous
-//            )
-//            .fill(Color.white)
-//
-//        )
+    }
+    
+    var cardDescription: some View {
+        
+        VStack(alignment: .leading) {
+            Text(character.name)
+                .font(.system(size: 18))
+            
+            Text(character.species)
+                .font(.system(size: 14))
+        }
     }
 }

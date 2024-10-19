@@ -12,11 +12,13 @@ import SwiftUI
 struct CharacterTableView: UIViewControllerRepresentable {
     var items: [CharacterDetails]
     var loadDataHandler: (() -> Void)?
+    var cardSelectionHandler: ((_ cellIndex: Int) -> Void)?
 
     func makeUIViewController(context: Context) -> CustomCharacterTableViewController {
         let tableView = CustomCharacterTableViewController()
         tableView.items = items
         tableView.loadDataHandler = loadDataHandler
+        tableView.cardSelectionHandler = cardSelectionHandler
         return tableView
     }
 
@@ -30,6 +32,7 @@ class CustomCharacterTableViewController: UITableViewController {
     
     var items: [CharacterDetails] = []
     var loadDataHandler: (() -> Void)?
+    var cardSelectionHandler: ((_ cellIndex: Int) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +81,10 @@ class CustomCharacterTableViewController: UITableViewController {
         if offsetY > contentHeight - scrollView.frame.size.height {
             loadDataHandler?()
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        cardSelectionHandler?(indexPath.row)
     }
 
 }

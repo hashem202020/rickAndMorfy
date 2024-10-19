@@ -9,14 +9,17 @@ import Foundation
 
 final class CharacterListViewModel: ObservableObject {
     private let getCharactersUseCase: GetCharacterListUseCase
+    private let characterListCoordinator: CharacterListCoordinator
     
     private var currentPage = 1
     private var canLoadMoreCharacters = true
 
     @Published var characters: [CharacterDetails] = []
     
-    init(getCharactersUseCase: GetCharacterListUseCase) {
+    init(getCharactersUseCase: GetCharacterListUseCase,
+         characterListCoordinator: CharacterListCoordinator) {
         self.getCharactersUseCase = getCharactersUseCase
+        self.characterListCoordinator = characterListCoordinator
         loadCharacterList()
     }
     
@@ -37,5 +40,9 @@ final class CharacterListViewModel: ObservableObject {
                 print(error)
             }
         }
+    }
+    
+    func openDetails(index: Int) {
+        characterListCoordinator.openCharacterDetails(character: characters[index])
     }
 }
