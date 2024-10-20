@@ -38,6 +38,7 @@
 		0CEDEE6D2CC450B300AA47CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDEE6C2CC450B300AA47CE /* AppDelegate.swift */; };
 		0CEDEE6F2CC4537D00AA47CE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDEE6E2CC4537D00AA47CE /* Coordinator.swift */; };
 		0CEDEE712CC45A0200AA47CE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDEE702CC45A0200AA47CE /* AppCoordinator.swift */; };
+		0CEDEE732CC47EBD00AA47CE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDEE722CC47EBD00AA47CE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		0CEDEE6C2CC450B300AA47CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CEDEE6E2CC4537D00AA47CE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0CEDEE702CC45A0200AA47CE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0CEDEE722CC47EBD00AA47CE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		0CEDEE072CC2887900AA47CE /* Rick and Morty */ = {
 			isa = PBXGroup;
 			children = (
+				0CEDEE722CC47EBD00AA47CE /* README.md */,
 				0CEDEE2F2CC2A92200AA47CE /* Rick-and-Morty-Info.plist */,
 				0CEDEE162CC2892E00AA47CE /* Application */,
 				0CEDEE172CC28A0200AA47CE /* Presentation */,
@@ -430,6 +433,7 @@
 				0CEDEE1D2CC28C8800AA47CE /* AppDependencyContainer.swift in Sources */,
 				0CEDEE4F2CC2E01600AA47CE /* CharacterDetails.swift in Sources */,
 				0CEDEE712CC45A0200AA47CE /* AppCoordinator.swift in Sources */,
+				0CEDEE732CC47EBD00AA47CE /* README.md in Sources */,
 				0CEDEE552CC2EA5B00AA47CE /* GetCharacterListUseCase.swift in Sources */,
 				0CEDEE632CC444CF00AA47CE /* DefaultCharacterListCoordinator.swift in Sources */,
 				0CEDEE6D2CC450B300AA47CE /* AppDelegate.swift in Sources */,
@@ -577,8 +581,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,8 +610,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
