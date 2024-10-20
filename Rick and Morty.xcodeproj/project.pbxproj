@@ -123,6 +123,7 @@
 		0CEDEDFC2CC2887900AA47CE = {
 			isa = PBXGroup;
 			children = (
+				0CEDEE722CC47EBD00AA47CE /* README.md */,
 				0CEDEE072CC2887900AA47CE /* Rick and Morty */,
 				0CEC396B2CC48B510032C392 /* Rick and MortyTests */,
 				0CEDEE062CC2887900AA47CE /* Products */,
@@ -141,7 +142,6 @@
 		0CEDEE072CC2887900AA47CE /* Rick and Morty */ = {
 			isa = PBXGroup;
 			children = (
-				0CEDEE722CC47EBD00AA47CE /* README.md */,
 				0CEDEE2F2CC2A92200AA47CE /* Rick-and-Morty-Info.plist */,
 				0CEDEE162CC2892E00AA47CE /* Application */,
 				0CEDEE172CC28A0200AA47CE /* Presentation */,
